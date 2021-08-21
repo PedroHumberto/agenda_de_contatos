@@ -14,12 +14,12 @@ class agenda:
         agenda.close()
 
     #Teste de cadastro
-    # cadastrar_contato("Little Stuart", "555 33231", "stuarlittle@desenho.com", "agenda.cvs")
-    # cadastrar_contato("Jhon Mayer", "555 87745", "jhonmayer@hotmail.com", "agenda.cvs")
-    # cadastrar_contato("Don Ramon", "333 45675", "donramon@hotmail.com", "agenda.cvs")
+    # cadastrar_contato("Little Stuart", "555 33231", "stuarlittle@desenho.com", "agenda.csv")
+    # cadastrar_contato("Jhon Mayer", "555 87745", "jhonmayer@hotmail.com", "agenda.csv")
+    # cadastrar_contato("Don Ramon", "333 45675", "donramon@hotmail.com", "agenda.csv")
 
     # Validação do cadastro:
-    agenda = open("agenda.cvs", 'r')
+    agenda = open("agenda.csv", 'r')
     contatos = agenda.readlines() #contatos em lita
     # for contato in contatos:
     #     print(contato)
@@ -38,7 +38,7 @@ class agenda:
             email = contato[2]
             print(f"{nome:<30}\t{telefone:<20}\t{email:<30}")
 
-    #listar_contatos("agenda.cvs")
+    #listar_contatos("agenda.csv")
 
     def buscar_contato(busca, arquivo_agenda):
         resultado = 0
